@@ -20,6 +20,10 @@ const AppProvider = ({ children }) => {
   const fetchStories = async (url) => {
     dispatch({ type: 'SET_LOADING' });
   };
+
+  useEffect(() => {
+    fetchStories();
+  }, []);
   return <AppContext.Provider value="hello">{children}</AppContext.Provider>;
 };
 // make sure use
