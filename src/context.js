@@ -26,7 +26,9 @@ const AppProvider = ({ children }) => {
   useEffect(() => {
     fetchStories();
   }, []);
-  return <AppContext.Provider value="hello">{children}</AppContext.Provider>;
+  return (
+    <AppContext.Provider value={{ ...state }}>{children}</AppContext.Provider>
+  );
 };
 // make sure use
 export const useGlobalContext = () => {
