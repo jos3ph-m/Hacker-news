@@ -7,6 +7,7 @@ function App() {
     <>
       <SearchForm />
       <Buttons />
+      <Stories />
     </>
   );
 }
