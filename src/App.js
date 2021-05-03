@@ -3,7 +3,11 @@ import SearchForm from './SearchForm';
 import Stories from './Stories';
 import Buttons from './Buttons';
 function App() {
-  return <></>;
+  return (
+    <>
+      <SearchForm />
+    </>
+  );
 }
 
 export default App;
