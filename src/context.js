@@ -22,7 +22,8 @@ const AppProvider = ({ children }) => {
   const fetchStories = async (url) => {
     dispatch({ type: SET_LOADING });
     try {
-      const response = await fetch();
+      const response = await fetch(url);
+      const data = await url.json();
     } catch (error) {
       console.log(error);
     }
