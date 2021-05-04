@@ -15,6 +15,7 @@ const initialState = {
   isLoading: true,
   hits: [],
   query: 'react',
+  page: 0,
 };
 
 const AppContext = React.createContext();
