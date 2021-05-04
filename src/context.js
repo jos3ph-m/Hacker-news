@@ -23,7 +23,7 @@ const AppProvider = ({ children }) => {
     dispatch({ type: SET_LOADING });
     try {
       const response = await fetch(url);
-      const data = await url.json();
+      const data = await response.json();
     } catch (error) {
       console.log(error);
     }
