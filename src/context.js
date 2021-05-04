@@ -22,7 +22,7 @@ const AppProvider = ({ children }) => {
   const fetchStories = async (url) => {
     dispatch({ type: SET_LOADING });
     try {
-      const response = 
+      const response = await fetch();
     } catch (error) {
       console.log(error);
     }
