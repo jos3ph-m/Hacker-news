@@ -35,7 +35,7 @@ const AppProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    fetchStories();
+    fetchStories(`${API_ENDPOINT}`);
   }, []);
   return (
     <AppContext.Provider value={{ ...state }}>{children}</AppContext.Provider>
