@@ -11,7 +11,7 @@ const Stories = () => {
   return (
     <section className="stories">
       {hits.map((story) => {
-        console.log(story);
+        const { objectID, title, num_commets, url, points, author } = story;
         return <article className="story">single story</article>;
       })}
     </section>
