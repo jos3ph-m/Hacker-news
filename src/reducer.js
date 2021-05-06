@@ -14,7 +14,7 @@ const reducer = (state, action) => {
       return {
         ...state,
         isLoading: false,
-        hits: action.payload,
+        hits: action.payload.hits,
         nbPages: action.payload.nbPages,
       };
     default:
