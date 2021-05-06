@@ -11,22 +11,8 @@ const Stories = () => {
   return (
     <section className="stories">
       {hits.map((story) => {
-        const { objectID, title, num_comments, url, points, author } = story;
-        return (
-          <article key={objectID} className="story">
-            <h4 className="title">{title}</h4>
-            <p className="info">
-              {points} points by <span>{author} | </span>
-              {num_comments} comments
-            </p>
-            <div>
-              <a href={url} className="read-link">
-                read more
-              </a>
-              <button className="remove-btn">remove</button>
-            </div>
-          </article>
-        );
+        console.log(story);
+        return <article className="story">single story</article>;
       })}
     </section>
   );

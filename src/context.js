@@ -44,7 +44,7 @@ const AppProvider = ({ children }) => {
     <AppContext.Provider value={{ ...state }}>{children}</AppContext.Provider>
   );
 };
-// make sure use
+
 export const useGlobalContext = () => {
   return useContext(AppContext);
 };
