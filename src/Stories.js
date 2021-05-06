@@ -15,6 +15,7 @@ const Stories = () => {
         return (
           <article key={objectID} className="story">
             <h4 className="title">{title}</h4>
+            <p className=""></p>
           </article>
         );
       })}
