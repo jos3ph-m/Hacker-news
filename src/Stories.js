@@ -12,7 +12,7 @@ const Stories = () => {
     <section className="stories">
       {hits.map((story) => {
         const { objectID, title, num_comments, url, points, author } = story;
-        return <article className="story"></article>;
+        return <article key={objectID} className="story"></article>;
       })}
     </section>
   );
