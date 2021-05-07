@@ -45,7 +45,9 @@ const AppProvider = ({ children }) => {
     fetchStories(`${API_ENDPOINT}query=${state.query}&page=${state.page}`);
   }, []);
   return (
-    <AppContext.Provider value={{ ...state }}>{children}</AppContext.Provider>
+    <AppContext.Provider value={{ ...state, removeStory }}>
+      {children}
+    </AppContext.Provider>
   );
 };
 
