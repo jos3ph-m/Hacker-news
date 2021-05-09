@@ -5,7 +5,7 @@ const Buttons = () => {
   const { isLoading, page, nbPages, handlePage } = useGlobalContext();
   return (
     <div className="btn-container">
-      <button onClick={handlePage}></button>
+      <button disabled={isLoading} onClick={handlePage}></button>
     </div>
   );
 };
