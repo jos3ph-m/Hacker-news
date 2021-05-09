@@ -23,7 +23,7 @@ const reducer = (state, action) => {
         hits: state.hits.filter((story) => story.objectID !== action.payload),
       };
     case HANDLE_SEARCH:
-      return;
+      return { ...state, query: action.payload };
     default:
       throw new Error(`no matching "${action.type}" type`);
   }
