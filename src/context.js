@@ -47,6 +47,7 @@ const AppProvider = ({ children }) => {
 
   const handlePage = (value) => {
     console.log(value);
+    //dispatch
   };
 
   useEffect(() => {
