@@ -9,7 +9,9 @@ const Buttons = () => {
         prev
       </button>
       <p>some values</p>
-      <button>next</button>
+      <button disabled={isLoading} onClick={() => handlePage('dec')}>
+        next
+      </button>
     </div>
   );
 };
