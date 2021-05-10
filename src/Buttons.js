@@ -9,6 +9,7 @@ const Buttons = () => {
         prev
       </button>
       <p>some values</p>
+      <button>next</button>
     </div>
   );
 };
