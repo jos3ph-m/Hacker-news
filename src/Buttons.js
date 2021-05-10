@@ -8,7 +8,7 @@ const Buttons = () => {
       <button disabled={isLoading} onClick={() => handlePage('dec')}>
         prev
       </button>
-      <p>some values</p>
+      <p>{page}</p>
       <button disabled={isLoading} onClick={() => handlePage('dec')}>
         next
       </button>
